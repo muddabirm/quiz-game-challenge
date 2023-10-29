@@ -1,0 +1,12 @@
+navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5rem;
+    padding-left: 2rem;
+}
+game-container{
+    display: flex;
+    align-items: center;
+    margin: 300px;
+    flex-direction: column;
+}
