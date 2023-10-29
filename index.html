@@ -3,19 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quiz</title>
-    <script src="javascript.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Quiz Game</title>
 </head>
 <body>
-    <h1 class="center">quiz</h1>
-    <h2 class="center">question?</h2>
-    <li class="li">
-        <button>A.</button>
-        <button>B.</button>
-        <button>C.</button>
-        <button>D.</button>
-    </li>
-    
+    <navbar>
+        <p><a href="score.html">View High Scores</a></p>
+        <p id="timer">Time: 60</p>
+    </navbar>
+    <game-container>
+        <div id="game">
+        <p>This is a timed quiz made to test your knowledge on all things coding, press the start button when ready to start the quiz.</p>
+        <button id="startbtn">Start Quiz</button>
+        </div>
+        <div id="showquestion"></div>
+        <div id="showendscreen"></div>
+        <div id="question-1">
+        <h4>What is a function?</h4>
+        <button id="correct-1">1. sequence of programming instructions</button>
+        <button class="incorrect">2. a class</button>
+        <button class="incorrect">3. a boolean</button>
+        <button class="incorrect">4. a loop</button>
+        </div>
+        <div id="question-2">
+        <h4>What is an array?</h4>
+        <button id="correct-2">1. a type of global object used to store data</button>
+        <button class="incorrect">2. a string</button>
+        <button class="incorrect">3. an interger</button>
+        <button class="incorrect">4. a float</button>
+        </div>
+        <div id="question-3">
+        <h4>What does the DOM stand for?</h4>
+        <button id="correct-3">1. Document Object Model</button>
+        <button class="incorrect">2. Delivery Object Model</button>
+        <button class="incorrect">3. Debugging Object Model</button>
+        <button class="incorrect">4. Deleting Object Model</button>
+        </div>
+        <div id="wrong">
+        <h4>WRONG!</h4>
+        </div>
+        <div id="gameOver">
+        <h4>All done!</h4>
+        <p id="scoreboard"></p>
+        <p>Enter Name:</p>
+        <input id="userInput">
+        <button id="scoreBtn">Submit</button>
+        </div>
+
+    </game-container>
 </body>
+<script src="index.js"></script>
 </html>
