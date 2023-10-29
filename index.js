@@ -90,4 +90,4 @@ scoreBtn.addEventListener("click",function(){
     let savedUser = userInput.value
     localStorage.setItem("name",savedUser)
     localStorage.setItem("score",score)
-})
+});
